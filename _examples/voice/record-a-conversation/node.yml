@@ -1,0 +1,13 @@
+---
+title: Node
+language: node
+dependencies:
+    - express
+    - body-parser
+    - dotenv
+code:
+    source: .repos/nexmo/nexmo-node-code-snippets/voice/record-a-conversation.js
+    from_line: 1
+    to_line: 33
+file_name: app.js
+run_command: 'node app.js'
