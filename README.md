@@ -4,12 +4,12 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
 
 This repository is the code and content for <https://developer.nexmo.com>, which includes the Nexmo documentation, API reference, SDKs, Tools & Community content. To get a Nexmo account, sign up [for free at nexmo.com][signup].
- 
+
 ### [Testing](#testing) &middot; [Running Locally](#running-locally) &middot; [Admin Dashboard](#admin-dashboard) &middot; [Troubleshooting](#troubleshooting) &middot; [Contributing](#contributing) &middot; [License](#license)
 
- 
 
-     
+
+
 ## Testing
 
 We use [rspec](http://rspec.info/) to test Nexmo Developer.
@@ -33,7 +33,7 @@ This will create a folder named `coverage`. Open `index.html` in this folder to 
 We write the docs in US English and enforce this at build time with a CI check. You can run the check locally using the following command:
 
 ```
-./node_modules/.bin/mdspell -r -n -a --en-us '_documentation/**/*.md' '_partials/*.md' '_partials/**/*.md' '_modals/**/*.md' '_tutorials/**.md'
+./node_modules/.bin/mdspell -r -n -a --en-us '_documentation/en/**/*.md' '_partials/*.md' '_partials/**/*.md' '_modals/**/*.md' '_tutorials/**.md'
 ```
 
 If there is a word that isn't in the dictionary but is correct to use, add it to the `.spelling` file (there's a lot of exceptions in there, including `Nexmo`!)
@@ -46,7 +46,7 @@ The project can be run on your laptop, either directly or using Docker. These in
 
 Before you start, you need to make sure that you have:
 
-- [Ruby 2.5.5](https://www.ruby-lang.org/en/downloads/) + [bundler](https://bundler.io/)
+- [Ruby 2.5.7](https://www.ruby-lang.org/en/downloads/) + [bundler](https://bundler.io/)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [Yarn](https://yarnpkg.com/en/docs/install)
 
@@ -58,13 +58,17 @@ Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install required packages, create database and configure `git`
+Install required packages, create database and configure `git`.
+
+Note: A default database is created for you when you run the `db:setup` script. If you'd like to create and
+use a different database or user, use `createdb database_name_here` or `createuser username_here` and make sure your
+`.env` file is updated accordingly (See [.env.example](https://github.com/Nexmo/nexmo-developer/blob/master/.env.example)).
 
 ```
-brew install postgres rbenv git yarn nvm
+brew install postgres rbenv git yarn nvm redis
 brew services start postgresql
-createdb nexmo_developer_development
-createuser nexmo_developer
+brew services start redis
+
 
 git config --global user.name "NAME"
 git config --global user.email "user.name@vonage.com"
@@ -73,7 +77,7 @@ git config --global user.email "user.name@vonage.com"
 Generate an SSH key for authentication
 
 ```
-ssh-keygen -t rsa 
+ssh-keygen -t rsa
 cat .ssh/id_rsa.pub # Add to Github
 ```
 
@@ -95,12 +99,13 @@ export NVM_DIR="$HOME/.nvm"
 
 Install the correct versions of ruby and node
 ```
-rbenv install 2.5.5
-rbenv global 2.5.5
+rbenv install 2.5.7
+rbenv global 2.5.7
 gem install bundle
 bundle install
-nvm install 9
-nvm use 9
+nvm install 12
+nvm use 12
+
 yarn install
 ```
 
@@ -241,7 +246,7 @@ Volta is the Vonage design system, and is used to style Nexmo Developer. To upgr
 * Copy the `scss` folder from the Volta repo in to `app/assets/volta`
 * Commit and push. Rails will take care of compilation etc
 
-## Contributing 
+## Contributing
 We :heart: contributions from everyone! It is a good idea to [talk to us](https://nexmo-community-invite.herokuapp.com/) first if you plan to add any new functionality. Otherwise, [bug reports](https://github.com/Nexmo/nexmo-developer/issues/), [bug fixes](https://github.com/Nexmo/nexmo-developer/pulls) and feedback on the library is always appreciated. Look at the [Contributor Guidelines](CONTRIBUTING.md) for more information and please follow the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
 
 ## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![GitHub contributors](https://img.shields.io/github/contributors/Nexmo/nexmo-developer.svg)](https://GitHub.com/Nexmo/nexmo-developer/graphs/contributors/)

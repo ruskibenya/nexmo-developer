@@ -1,6 +1,19 @@
 require 'rails_helper'
 
 RSpec.feature 'Team' do
+  before do
+    expect(Greenhouse).to receive(:devrel_careers).and_return(
+      [
+        Career.new(
+          title: 'Developer Advocate',
+          location: { name: 'Remote' },
+          content: 'This is some example content',
+          absolute_url: 'https://boards.greenhouse.io/vonage/jobs/123'
+        ),
+      ]
+    )
+  end
+
   scenario 'visiting the team page' do
     visit '/team'
 
@@ -12,17 +25,11 @@ RSpec.feature 'Team' do
         expect(page).to have_content('Here are some of the people behind Nexmo Developer. Oh, and we\'re hiring for')
         expect(page).to have_link('the developer relations team', href: '#join')
         expect(page).to have_content('and')
-        expect(page).to have_link('other teams at Nexmo', href: 'https://www.vonage.com/corporate/careers/')
+        expect(page).to have_link('other teams at Nexmo', href: '/careers')
       end
 
       within('.Vlt-grid:nth-of-type(1)') do
-        expect(page).to have_css('.Nxd-profile', count: 25)
-      end
-
-      expect(page).to have_css('h2', text: 'Alumni')
-
-      within('.Vlt-grid:nth-of-type(2)') do
-        expect(page).to have_css('.Nxd-profile', count: 6)
+        expect(page).to have_css('.Nxd-profile').at_least(1).times
       end
 
       expect(page).to have_css('h2', text: 'Contributors')
@@ -30,7 +37,7 @@ RSpec.feature 'Team' do
       expect(page).to have_css('p', text: 'Check out our Contributors page on GitHub.')
       expect(page).to have_link('Contributors', href: 'https://github.com/Nexmo/nexmo-developer/graphs/contributors')
 
-      within('.Vlt-grid:nth-of-type(3)') do
+      within('.Vlt-grid:nth-of-type(2)') do
         within('.Vlt-col:nth-of-type(1)') do
           expect(page).to have_link(href: '/spotlight')
         end

@@ -47,11 +47,6 @@ RSpec.describe 'Smoke Tests', type: :request do
     expect(response.body).to include('Join the Nexmo Community Slack')
   end
 
-  it '/contribute redirects' do
-    get '/contribute'
-    expect(response.body).to include('<html><body>You are being <a href="http://www.example.com/contribute/overview">redirected</a>.</body></html>')
-  end
-
   it '/contribute/overview contains the expected text' do
     get '/contribute/overview'
     expect(response.body).to include('We\'re always looking at ways to improve our documentation and platform and would love to invite you to contribute your suggestions not only to the content but also the open-source platform that it is built upon.')
@@ -68,27 +63,16 @@ RSpec.describe 'Smoke Tests', type: :request do
   end
 
   it '/team contains the expected text' do
+    expect(Greenhouse).to receive(:devrel_careers).and_return([])
     get '/team'
     expect(response.body).to include('Our mission is to build a world-class open source documentation platform to help developers build connected products.')
   end
 
-  it '/team/technical-lead-developer-experience contains the expected text' do
-    career = Career.new({
-      title: 'Ruby on Rails Technical Lead',
-      published: true,
-      location: 'Remote',
-      description: 'This is a test description',
-    })
-
-    expect(Career).to receive_message_chain(:friendly, :find).with('technical-lead-developer-experience').and_return(career)
-    get '/team/technical-lead-developer-experience'
-    expect(response.body).to include('Ruby on Rails Technical Lead')
-    expect(response.body).to include('This is a test description')
-  end
-
   it 'markdown page contains the expected text' do
     get '/voice/voice-api/guides/numbers'
+
     expect(response.body).to include('Numbers are a key concept to understand when working with the Nexmo Voice API. The following points should be considered before developing your Nexmo Application.')
+    expect(response.body).to include('github_url')
   end
 
   it 'markdown page has default code_language' do

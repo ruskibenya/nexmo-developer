@@ -5,21 +5,46 @@ menu_weight: 1
 ---
 
 
-Clone this [Github project](https://github.com/Nexmo/Client-Get-Started-AppToPhone-Voice-Swift).
+Clone this [Github project](https://github.com/Nexmo/ClientSDK-Get-Started-Voice-Swift).
 
-Using the Github project you cloned, in the Starter app, with XCode:
+Using the Github project you cloned, in the Start folder, open `GettingStarted.xcworkspace`. Then, within XCode:
+
     
-1. Open `Constants.swift` file and replace the user token:
+1. Open `Constants.swift` file and add a jwt for `Jane`:
 
+```swift
+    var jwt: String {
+        switch self {
+        case .jane:
+            return "" //TODO: swap with a token for Jane
+        ...
+```
+
+as well as a  phone number to call:
+
+```swift
+    static let calleePhoneNumber = "" //TODO: swap with a phone number to call
+```
+
+
+2. From the `Make-phone-call` group, open `MakePhoneCallViewController.swift` file and make sure the following lines exist:
+
+* Imports the SDK
     ```swift
-    enum Constant {
-        static var userName = "Jane"
-        static var userToken = "" //TODO: swap with a token for Jane
-    }
+    import NexmoClient
     ```
 
-2. Open `ViewController.swift` file and make sure the following lines exist:
+* Sets the user that places the call
+    ```swift
+    let user = User.jane
+    ```
 
-* `import NexmoClient` - imports the sdk
-* `var client: NXMClient?` - property for the client instance
-* `var call: NXMCall?` - property for the call instance
+* Property for the client instance
+    ```swift
+    var client: NXMClient?
+    ```
+
+* property for the call instance
+    ```swift
+    var call: NXMCall?
+    ```

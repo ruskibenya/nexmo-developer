@@ -9,7 +9,9 @@ Bundler.require(*Rails.groups)
 module NexmoDeveloper
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    config.load_defaults 6.0
+
+    Rails.autoloaders.main.ignore("#{Rails.root}/app/extensions")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -26,6 +28,7 @@ module NexmoDeveloper
     config.autoload_paths += Dir[File.join(Rails.root, 'app', 'middleware', '**', '*.rb')].each { |l| require l }
 
     config.middleware.use NexmoDeveloper::BuildingBlockRedirect
+    config.middleware.use NexmoDeveloper::VisitorId
 
     config.generators do |g|
       g.orm :active_record, primary_key_type: :uuid

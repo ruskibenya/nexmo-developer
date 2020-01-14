@@ -48,14 +48,14 @@ RSpec.feature 'Landing page' do
 
       within('.Vlt-col.Vlt-col--1of3.Vlt-col--M-1of2:nth-of-type(3)') do
         expect(page).to have_css('small', text: 'Programmable')
-        expect(page).to have_link('Video', href: 'https://tokbox.com/developer/guides/basics/')
+        expect(page).to have_link('Video', href: 'https://tokbox.com/developer/')
 
         within('nav') do
           expect(page).to have_link('Overview', href: 'https://tokbox.com/developer/guides/basics/')
           expect(page).to have_link('Guides', href: 'https://tokbox.com/developer/guides/')
           expect(page).to have_link('Code Snippets', href: 'https://tokbox.com/developer/samples/')
           expect(page).to have_link('Tutorials', href: 'https://tokbox.com/developer/tutorials/')
-          expect(page).to have_link('API Reference', href: 'https://tokbox.com/developer/sdks/js/')
+          expect(page).to have_link('API Reference', href: 'https://tokbox.com/developer/sdks/client/')
         end
       end
 
@@ -123,15 +123,11 @@ RSpec.feature 'Landing page' do
       end
 
       within('.Vlt-col.Vlt-col--1of3.Vlt-col--M-1of2:nth-of-type(9)') do
+        expect(page).to have_css('h2', text: 'Management APIs')
         within('nav:nth-of-type(1)') do
-          expect(page).to have_css('h3', text: 'Developer API')
-          expect(page).to have_link('Messages', href: '/api/developer/messages')
+          expect(page).to have_link('Message Search', href: '/api/developer/messages')
           expect(page).to have_link('Numbers', href: '/api/developer/numbers')
           expect(page).to have_link('Pricing', href: '/api/developer/pricing')
-        end
-
-        within('nav:nth-of-type(2)') do
-          expect(page).to have_css('h3', text: 'Global APIs')
           expect(page).to have_link('Conversion', href: '/api/conversion')
           expect(page).to have_link('Media', href: '/api/media')
           expect(page).to have_link('Redact', href: '/api/redact')
@@ -173,7 +169,7 @@ RSpec.feature 'Landing page' do
       end
 
       within('.Nxd-products-banner:nth-of-type(2)') do
-        expect(page).to have_link('Nexmo Client SDK - Early Access', href: '/client-sdk/overview')
+        expect(page).to have_link('Nexmo Client SDK - Beta', href: '/client-sdk/overview')
         expect(page).to have_css('p', text: 'Build multi-platform applications with contextual communications using Nexmo Client SDK and Conversation API.')
       end
 
@@ -185,10 +181,10 @@ RSpec.feature 'Landing page' do
           within('nav') do
             expect(page).to have_link('Overview', href: '/client-sdk/in-app-voice/overview')
             expect(page).to have_link('Concepts', href: '/client-sdk/in-app-voice/overview#concepts')
-            expect(page).to have_link('Setup', href: '/client-sdk/setup/add-sdk-to-your-app')
+            expect(page).to have_link('Setup', href: '/client-sdk/setup/create-your-application')
             expect(page).to have_link('Getting Started', href: '/client-sdk/in-app-voice/getting-started/app-to-app-call')
-            expect(page).to have_link('Guides', href: '/client-sdk/in-app-voice/guides/start-and-receive-calls')
-            expect(page).to have_link('Use Cases', href: '/client-sdk/in-app-voice/contact-center-overview')
+            expect(page).to have_link('Tutorials', href: '/client-sdk/tutorials')
+            expect(page).to have_link('Use Cases', href: '/client-sdk/use-cases')
             expect(page).to have_link('Conversation API Reference', href: '/api/conversation')
             expect(page).to have_link('SDK Reference - Android', href: '/client-sdk/sdk-documentation/android')
             expect(page).to have_link('SDK Reference - iOS', href: '/client-sdk/sdk-documentation/ios')
@@ -203,6 +199,8 @@ RSpec.feature 'Landing page' do
           within('nav') do
             expect(page).to have_link('Overview', href: '/client-sdk/in-app-messaging/overview')
             expect(page).to have_link('Concepts', href: '/client-sdk/in-app-messaging/concepts')
+            expect(page).to have_link('Tutorials', href: '/client-sdk/tutorials')
+            expect(page).to have_link('Use Cases', href: '/client-sdk/use-cases')
             expect(page).to have_link('Conversation API Reference', href: '/api/conversation')
             expect(page).to have_link('SDK Reference - Android', href: '/client-sdk/sdk-documentation/android')
             expect(page).to have_link('SDK Reference - iOS', href: '/client-sdk/sdk-documentation/ios')

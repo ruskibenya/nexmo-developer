@@ -9,11 +9,12 @@ services:
 addons:
   postgresql: '9.4'
 before_install:
-  - gem update --system
+  - gem update --system 3.0.3
   - gem update bundler
+  - nvm install
 install: bundle install --deployment --path vendor/bundle && yarn install
 env:
-  - OAS_PATH="_open_api/api_specs"
+  - OAS_PATH="_open_api/api_specs/definitions"
 before_script:
   - |
     if [ -z "$SSH_KEY_REQUIRED" ]; then
@@ -36,6 +37,7 @@ script:
   - bundle exec rake ci:verify_navigation
   - bundle exec rake ci:verify_oas_reference
   - bundle exec rake ci:verify_error_urls_resolve
+  - bundle exec rake ci:check_word_blocklist
   - RAILS_ENV=test bundle exec rake webpacker:compile
-  - ./node_modules/.bin/mdspell -r -n -a --en-us '_documentation/**/*.md' '_partials/*.md' '_partials/**/*.md' '_modals/**/*.md' '_tutorials/**.md'
+  - ./node_modules/.bin/mdspell -r -n -a --en-us '_documentation/en/**/*.md' '_partials/*.md' '_partials/**/*.md' '_modals/**/*.md' '_tutorials/**.md'
   - yarn test

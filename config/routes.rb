@@ -57,7 +57,6 @@ Rails.application.routes.draw do
 
   get '/legacy', to: 'static#legacy'
   get '/team', to: 'static#team'
-  resources :careers, only: [:show], path: 'team'
 
   get '/community/slack', to: 'slack#join'
   post '/community/slack', to: 'slack#invite'
@@ -84,6 +83,8 @@ Rails.application.routes.draw do
   authenticated(:user) do
     mount Split::Dashboard, at: 'split' if ENV['REDIS_URL']
   end
+
+  resources :careers, only: [:index]
 
   get '/task/(*tutorial_step)', to: 'tutorial#single'
   get '/(:product)/tutorials', to: 'tutorial#list', constraints: DocumentationConstraint.documentation

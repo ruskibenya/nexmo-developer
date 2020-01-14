@@ -1,74 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>JSDoc: Class: Media</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>DocStrap Class: Media</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
 </head>
 
 <body>
 
-<div id="main">
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">DocStrap</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Application.html">Application</a></li><li><a href="Conversation.html">Conversation</a></li><li><a href="ConversationsPage.html">ConversationsPage</a></li><li><a href="EventsPage.html">EventsPage</a></li><li><a href="ImageEvent.html">ImageEvent</a></li><li><a href="Media.html">Media</a></li><li><a href="Member.html">Member</a></li><li><a href="NexmoApiError.html">NexmoApiError</a></li><li><a href="NexmoClient.html">NexmoClient</a></li><li><a href="NexmoClientError.html">NexmoClientError</a></li><li><a href="NXMCall.html">NXMCall</a></li><li><a href="NXMEvent.html">NXMEvent</a></li><li><a href="TextEvent.html">TextEvent</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Application.html#event:call:status:changed">Application#call:status:changed</a></li><li><a href="Application.html#event:NXM-errors">Application#event:NXM-errors</a></li><li><a href="Application.html#event:member:call">Application#member:call</a></li><li><a href="Application.html#event:member:invited">Application#member:invited</a></li><li><a href="Application.html#event:member:joined">Application#member:joined</a></li><li><a href="Application.html#event:rtcstats:report">Application#rtcstats:report</a></li><li><a href="Application.html#event:sync:progress">Application#sync:progress</a></li><li><a href="Conversation.html#event:audio:mute:off">Conversation#audio:mute:off</a></li><li><a href="Conversation.html#event:audio:mute:on">Conversation#audio:mute:on</a></li><li><a href="Conversation.html#event:event:delete">Conversation#event:delete</a></li><li><a href="Conversation.html#event:image">Conversation#event:image</a></li><li><a href="Conversation.html#event:text">Conversation#event:text</a></li><li><a href="Conversation.html#event:image:seen">Conversation#image:seen</a></li><li><a href="Conversation.html#event:member:call:status">Conversation#member:call:status</a></li><li><a href="Conversation.html#event:member:invited">Conversation#member:invited</a></li><li><a href="Conversation.html#event:member:joined">Conversation#member:joined</a></li><li><a href="Conversation.html#event:member:left">Conversation#member:left</a></li><li><a href="Conversation.html#event:member:media">Conversation#member:media</a></li><li><a href="Conversation.html#event:text:seen">Conversation#text:seen</a></li><li><a href="Conversation.html#event:text:typing:off">Conversation#text:typing:off</a></li><li><a href="Conversation.html#event:text:typing:on">Conversation#text:typing:on</a></li><li><a href="Member.html#event:media:stream:on">Member#media:stream:on</a></li><li><a href="NexmoClient.html#event:connecting">NexmoClient#event:connecting</a></li><li><a href="NexmoClient.html#event:disconnect">NexmoClient#event:disconnect</a></li><li><a href="NexmoClient.html#event:error">NexmoClient#event:error</a></li><li><a href="NexmoClient.html#event:ready">NexmoClient#event:ready</a></li><li><a href="NexmoClient.html#event:reconnect">NexmoClient#event:reconnect</a></li><li><a href="NexmoClient.html#event:reconnecting">NexmoClient#event:reconnecting</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
 
-    <h1 class="page-title">Class: Media</h1>
-
-    
-
+</div>
+</div>
 
 
+<div class="container" id="toc-content">
+<div class="row">
 
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: Media</h1>
 <section>
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Media<span class="signature">()</span><span class="type-signature"></span></h2>
+        <h2>
+        Media
+        </h2>
         
     
 </header>
+
 
 <article>
     <div class="container-overview">
     
         
+<hr>
+<dt>
+    <h4 class="name" id="Media"><span class="type-signature"></span>new Media()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>WebRTC Media class</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="Media"><span class="type-signature"></span>new Media<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
-
-
-<div class="description">
-    WebRTC Media class
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
+<dl class="details">
+    
 
     <h5 class="subsection-title">Properties:</h5>
 
-    
+    <dl>
 
-<table class="props">
+<table class="props table table-striped">
     <thead>
     <tr>
         
@@ -99,6 +149,7 @@
 <span class="param-type"><a href="Application.html">Application</a></span>
 
 
+
             
             </td>
 
@@ -106,7 +157,7 @@
 
             
 
-            <td class="description last">The parent application object</td>
+            <td class="description last"><p>The parent application object</p></td>
         </tr>
 
     
@@ -122,6 +173,7 @@
 <span class="param-type"><a href="Conversation.html">Conversation</a></span>
 
 
+
             
             </td>
 
@@ -129,10 +181,10 @@
 
             
 
-            <td class="description last">the conversation object this media instance belongs to
+            <td class="description last"><p>the conversation object this media instance belongs to</p>
                 <h6>Properties</h6>
 
-<table class="props">
+<table class="props table table-striped">
     <thead>
     <tr>
         
@@ -154,29 +206,6 @@
 
         <tr>
             
-                <td class="name"><code>remoteMembers</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;<a href="Member.html">Member</a>></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The remote members</td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>streamIndex</code></td>
             
 
@@ -186,6 +215,7 @@
 <span class="param-type">number</span>
 
 
+
             
             </td>
 
@@ -193,7 +223,7 @@
 
             
 
-            <td class="description last">the latest index of the streams, updated in each new peer offer</td>
+            <td class="description last"><p>the latest index of the streams, updated in each new peer offer</p></td>
         </tr>
 
     
@@ -216,6 +246,7 @@
 <span class="param-type">Array.&lt;object></span>
 
 
+
             
             </td>
 
@@ -223,10 +254,10 @@
 
             
 
-            <td class="description last">data related to the rtc connection
+            <td class="description last"><p>data related to the rtc connection</p>
                 <h6>Properties</h6>
 
-<table class="props">
+<table class="props table table-striped">
     <thead>
     <tr>
         
@@ -236,7 +267,7 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
+        <th>Argument</th>
         
 
         
@@ -259,6 +290,7 @@
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -272,7 +304,7 @@
 
             
 
-            <td class="description last">the rtc_id</td>
+            <td class="description last"><p>the rtc_id</p></td>
         </tr>
 
     
@@ -288,6 +320,7 @@
 <span class="param-type">PeerConnection</span>
 
 
+
             
             </td>
 
@@ -301,7 +334,7 @@
 
             
 
-            <td class="description last">the current PeerConnection object</td>
+            <td class="description last"><p>the current PeerConnection object</p></td>
         </tr>
 
     
@@ -317,6 +350,7 @@
 <span class="param-type">Stream</span>
 
 
+
             
             </td>
 
@@ -330,7 +364,7 @@
 
             
 
-            <td class="description last">the stream of the specific rtc_id</td>
+            <td class="description last"><p>the stream of the specific rtc_id</p></td>
         </tr>
 
     
@@ -344,6 +378,7 @@
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -361,7 +396,7 @@
 
             
 
-            <td class="description last">audio|video|screenshare the type of the stream</td>
+            <td class="description last"><p>audio the type of the stream</p></td>
         </tr>
 
     
@@ -377,6 +412,7 @@
 <span class="param-type">number</span>
 
 
+
             
             </td>
 
@@ -390,7 +426,7 @@
 
             
 
-            <td class="description last">the index number of the stream (e.g. use to mute)</td>
+            <td class="description last"><p>the index number of the stream (e.g. use to mute)</p></td>
         </tr>
 
     
@@ -403,11 +439,15 @@
     
     </tbody>
 </table>
+</dl>
 
+    
 
+	
 
+	
 
-<dl class="details">
+	
 
     
 
@@ -417,59 +457,59 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-31">line 31</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
+    <h5>Fires:</h5>
+    <ul>
+        <li><a href="Application.html#event:rtcstats:report">Application#rtcstats:report</a></li>
+    
+        <li><a href="Member.html#event:media:stream:on">Member#media:stream:on</a></li>
+    </ul>
+    
 
+    
 
-<h5>Fires:</h5>
-<ul>
-    <li><a href="Application.html#event:rtcstats:report">Application#rtcstats:report</a></li>
+    
 
-    <li><a href="Member.html#event:media:stream:on">Member#media:stream:on</a></li>
-</ul>
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
+    
+</dd>
 
     
     </div>
@@ -487,40 +527,40 @@
     
 
     
-
-    
         <h3 class="subsection-title">Methods</h3>
 
-        
+        <dl>
             
+<hr>
+<dt>
+    <h4 class="name" id="_cleanMediaProperties"><span class="type-signature"></span>_cleanMediaProperties()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Cleans up the user's media before leaving the conversation</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="_cleanMediaProperties"><span class="type-signature"></span>_cleanMediaProperties<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
-
-
-<div class="description">
-    Cleans up the user's media before leaving the conversation
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -530,85 +570,87 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-354">line 354</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line986">line 986</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="disable"><span class="type-signature"></span>disable()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Disable media participation in the conversation for this application<br>
+if RtcStats MOS is enabled, a final report will be available in<br>
+NexmoClient#rtcstats:report</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="disable"><span class="type-signature"></span>disable<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
-
-
-
-<div class="description">
-    Disable media participation in the conversation for this application
-if RtcStats MOS is enabled, a final report will be available in
-ConversationClient#rtcstats:report
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -618,51 +660,52 @@ ConversationClient#rtcstats:report
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-598">line 598</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1328">line 1328</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -674,55 +717,54 @@ ConversationClient#rtcstats:report
 <span class="param-type">Promise</span>
 
 
+
     </dd>
 </dl>
 
+
+        
+
     
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>function disable() {
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">function disable() {
   conversation.media.disable()
-     .then((response) => {
-      }).catch((error) => {
+     .then((response) =&gt; {
+      }).catch((error) =&gt; {
           console.log(error);
       });
-}</code></pre>
+}</pre>
 
 
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="enable"><span class="type-signature">&lt;async> </span>enable(params)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Enable media participation in the conversation for this application (requires WebRTC)</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="enable"><span class="type-signature"></span>enable<span class="signature">(params)</span><span class="type-signature"> &rarr; {Promise.&lt;MediaStream>}</span></h4>
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-
-
-<div class="description">
-    Enable media participation in the conversation for this application (requires WebRTC)
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -753,6 +795,7 @@ ConversationClient#rtcstats:report
 <span class="param-type">object</span>
 
 
+
             
             </td>
 
@@ -760,11 +803,11 @@ ConversationClient#rtcstats:report
 
             
 
-            <td class="description last">rtc params
-                <h6>Properties</h6>
+            <td class="description last"><p>rtc params</p>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
                 
 
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -774,7 +817,7 @@ ConversationClient#rtcstats:report
         <th>Type</th>
 
         
-        <th>Attributes</th>
+        <th>Argument</th>
         
 
         
@@ -799,6 +842,7 @@ ConversationClient#rtcstats:report
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -818,7 +862,7 @@ ConversationClient#rtcstats:report
                 </td>
             
 
-            <td class="description last">Label is an application defined tag, eg. ‘fullscreen’</td>
+            <td class="description last"><p>Label is an application defined tag, eg. ‘fullscreen’</p></td>
         </tr>
 
     
@@ -832,6 +876,7 @@ ConversationClient#rtcstats:report
             
                 
 <span class="param-type">object</span>
+
 
 
             
@@ -857,7 +902,7 @@ ConversationClient#rtcstats:report
                 </td>
             
 
-            <td class="description last">audio enablement mode. possible values "both", "send_only", "receive_only", "none", true or false</td>
+            <td class="description last"><p>audio enablement mode. possible values &quot;both&quot;, &quot;send_only&quot;, &quot;receive_only&quot;, &quot;none&quot;, true or false</p></td>
         </tr>
 
     
@@ -873,45 +918,6 @@ ConversationClient#rtcstats:report
 <span class="param-type">object</span>
 
 
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-
-            <td class="description last">attach the audio stream automatically to start playing after enable media (default false)
-* <!-- the following line should be added when deploying video to prod.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>video</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
 
             
             </td>
@@ -936,125 +942,7 @@ ConversationClient#rtcstats:report
                 </td>
             
 
-            <td class="description last">video enablement mode. possible values "both", "send_only", "receive_only", "none", true or false</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>video</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    {direction: 'some_direction', constraints: constraints_object}
-                
-                </td>
-            
-
-            <td class="description last">video enablement mode.
-possible values for direction "both", "send_only", "receive_only", "none", true or false</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>screenshare</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-
-            <td class="description last">screen sharing enablement mode. possible values "send_only", "none", true or false</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>screenshare</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    {direction: 'some_direction'}
-                
-                </td>
-            
-
-            <td class="description last">screen sharing enablement mode. possible values for direction "send_only", "none", true or false  --></td>
+            <td class="description last"><p>attach the audio stream automatically to start playing after enable media (default false)</p></td>
         </tr>
 
     
@@ -1068,12 +956,17 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1083,51 +976,52 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-558">line 558</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1262">line 1262</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -1139,74 +1033,73 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">Promise.&lt;MediaStream></span>
 
 
+
     </dd>
 </dl>
 
+
+        
+
     
-
-
-
-
-    <h5>Example</h5>
-    
+        <h5>Example</h5>
+        
         <p class="code-caption">Enable media in this conversation</p>
     
-    <pre class="prettyprint"><code>function enable() {
+    <pre class="sunlight-highlight-javascript">function enable() {
   conversation.media.enable()
-     .then((stream) => {
-                const media = document.createElement("audio");
-                const source = document.createElement("source");
-                const media_div = document.createElement("div");
-                media.appendChild(source);
-                media_div.appendChild(media);
-                document.insertBefore(media_div);
-                // Older browsers may not have srcObject
-                if ("srcObject" in media) {
-                    media.srcObject = stream;
-                } else {
-                    // Avoid using this in new browsers, as it is going away.
-                    media.src = window.URL.createObjectURL(stream);
-                }
-                media.onloadedmetadata = (e) => {
-                    media.play();
-                };
+     .then((stream) =&gt; {
+         const media = document.createElement(&quot;audio&quot;);
+         const source = document.createElement(&quot;source&quot;);
+         const media_div = document.createElement(&quot;div&quot;);
+         media.appendChild(source);
+         media_div.appendChild(media);
+         document.insertBefore(media_div);
+         // Older browsers may not have srcObject
+         if (&quot;srcObject&quot; in media) {
+           media.srcObject = stream;
+         } else {
+           // Avoid using this in new browsers, as it is going away.
+           media.src = window.URL.createObjectURL(stream);
+         }
+         media.onloadedmetadata = (e) =&gt; {
+           media.play();
+         };
 
-		 }).catch((error) => {
+		 }).catch((error) =&gt; {
           console.log(error);
-      });
-}</code></pre>
+     });
+}</pre>
 
 
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="mute"><span class="type-signature"></span>mute( [mute] [, streamIndex])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Mute our member</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="fetchRecording"><span class="type-signature"></span>fetchRecording<span class="signature">(url)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-
-
-<div class="description">
-    Download the recoding file
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1216,160 +1109,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
         <th>Type</th>
 
         
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the recording url coming in the recording event</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1466">line 1466</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="mute"><span class="type-signature"></span>mute<span class="signature">(mute<span class="signature-attributes">opt</span>, audio<span class="signature-attributes">opt</span>, video<span class="signature-attributes">opt</span>, streamIndex<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Mute our member
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
+        <th>Argument</th>
         
 
         
@@ -1394,83 +1134,6 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">boolean</span>
 
 
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-
-            <td class="description last">true for mute, false for unmute</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>audio</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-
-            <td class="description last">true for audio stream - relevant only in video conversation</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>video</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
 
             
             </td>
@@ -1495,7 +1158,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
                 </td>
             
 
-            <td class="description last">true for video stream - relevant only in video conversation</td>
+            <td class="description last"><p>true for mute, false for unmute</p></td>
         </tr>
 
     
@@ -1511,6 +1174,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">number</span>
 
 
+
             
             </td>
 
@@ -1529,22 +1193,29 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
             
                 <td class="default">
                 
+                    null
+                
                 </td>
             
 
-            <td class="description last">stream id to set - if it's not set all streams will be muted</td>
+            <td class="description last"><p>stream id to set - if it's not set all streams will be muted</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1554,98 +1225,93 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-468">line 468</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1154">line 1154</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Examples</h5>
     
-        <p class="code-caption">Mute audio stream in non video conversation</p>
+
     
-    <pre class="prettyprint"><code>media.mute(true)</code></pre>
 
-        <p class="code-caption">Mute audio and video streams in video conversation</p>
     
-    <pre class="prettyprint"><code>media.mute(true, true, true, 0)</code></pre>
 
-        <p class="code-caption">Mute only video in video conversation</p>
     
-    <pre class="prettyprint"><code>media.mute(true, false, true, 0)</code></pre>
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+        <p class="code-caption">Mute audio stream in conversation</p>
+    
+    <pre class="sunlight-highlight-javascript">media.mute(true)</pre>
 
 
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="playStream"><span class="type-signature">&lt;async> </span>playStream()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Play an audio stream in a conversation</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="playStream"><span class="type-signature"></span>playStream<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
     
 
     
-
-
-
-<div class="description">
-    Play an audio stream in a conversation
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -1655,51 +1321,52 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-691">line 691</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1493">line 1493</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -1708,47 +1375,45 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
+<span class="param-type">Promise.&lt;<a href="NXMEvent.html">NXMEvent</a>></span>
+
 
 
     </dd>
 </dl>
 
+
+        
+
     
-
-
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="sayText"><span class="type-signature">&lt;async> </span>sayText(params)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Play a voice text in a conversation</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="record"><span class="type-signature"></span>record<span class="signature">(params)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Recording.html">Recording</a>>}</span></h4>
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-
-
-<div class="description">
-    Record the audio stream in a conversation
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1779,327 +1444,6 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">object</span>
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>format</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">= (mp3, wav, ogg)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>streamed</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">-</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>validity_time</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">-</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beep_start</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">-</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beep_stop</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">~</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>detect_speech</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">-</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1435">line 1435</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;<a href="Recording.html">Recording</a>></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>conversation.audio.record()</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="sayText"><span class="type-signature"></span>sayText<span class="signature">(params)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Play a voice text in a conversation
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
 
             
             </td>
@@ -2109,10 +1453,10 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
                 
 
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2143,6 +1487,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2150,7 +1495,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">the text to say in the conversation</td>
+            <td class="description last"><p>the text to say in the conversation</p></td>
         </tr>
 
     
@@ -2166,6 +1511,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2173,7 +1519,9 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">-</td>
+            <td class="description last"><ul>
+<li></li>
+</ul></td>
         </tr>
 
     
@@ -2189,6 +1537,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">number</span>
 
 
+
             
             </td>
 
@@ -2196,7 +1545,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">[0] -</td>
+            <td class="description last"><p>[0] -</p></td>
         </tr>
 
     
@@ -2212,6 +1561,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">boolean</span>
 
 
+
             
             </td>
 
@@ -2219,7 +1569,9 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">-</td>
+            <td class="description last"><ul>
+<li></li>
+</ul></td>
         </tr>
 
     
@@ -2235,6 +1587,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">boolean</span>
 
 
+
             
             </td>
 
@@ -2242,7 +1595,9 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">-</td>
+            <td class="description last"><ul>
+<li></li>
+</ul></td>
         </tr>
 
     
@@ -2256,12 +1611,17 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2271,51 +1631,52 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-619">line 619</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1351">line 1351</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -2324,52 +1685,51 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
+<span class="param-type">Promise.&lt;<a href="NXMEvent.html">NXMEvent</a>></span>
+
 
 
     </dd>
 </dl>
 
+
+        
+
     
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">conversation.media.sayText({text:&#x27;hi&#x27;});</pre>
 
 
-
-
-    <h5>Example</h5>
     
-    <pre class="prettyprint"><code>conversation.media.say({text:'hi'})</code></pre>
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="sendDTMF"><span class="type-signature">&lt;async> </span>sendDTMF(digit)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Send DTMF in a conversation</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="sendDTMF"><span class="type-signature"></span>sendDTMF<span class="signature">(digit)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-
-
-<div class="description">
-    Send DTMF in a conversation
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2400,6 +1760,7 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2407,19 +1768,24 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
             
 
-            <td class="description last">the DTMF digit(s) to send</td>
+            <td class="description last"><p>the DTMF digit(s) to send</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2429,51 +1795,52 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-652">line 652</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1384">line 1384</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -2482,53 +1849,57 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
+<span class="param-type">Promise.&lt;<a href="NXMEvent.html">NXMEvent</a>></span>
+
 
 
     </dd>
 </dl>
 
+
+        
+
     
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">conversation.media.sendDTMF(&#x27;digit&#x27;);</pre>
 
 
-
-
-    <h5>Example</h5>
     
-    <pre class="prettyprint"><code>conversation.media.sendDTMF('digit')</code></pre>
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="startRinging"><span class="type-signature">&lt;async> </span>startRinging()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Send start ringing event</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="startRinging"><span class="type-signature"></span>startRinging<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
     
 
     
-
-
-
-<div class="description">
-    Send start ringing event
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2538,51 +1909,52 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-724">line 724</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1528">line 1528</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -2591,64 +1963,68 @@ possible values for direction "both", "send_only", "receive_only", "none", true 
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
+<span class="param-type">Promise.&lt;<a href="NXMEvent.html">NXMEvent</a>></span>
+
 
 
     </dd>
 </dl>
 
+
+        
+
     
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>Send ringing event
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Send ringing event
 function startRinging() {
   conversation.media.startRinging()
-     .then((response) => {
-      }).catch((error) => {
+     .then((response) =&gt; {
+      }).catch((error) =&gt; {
           console.log(error);
       });
 }
 
-conversation.on('audio:ringing:start', (data) => {
-console.log("ringing");
-});</code></pre>
+conversation.on(&#x27;audio:ringing:start&#x27;, (data) =&gt; {
+console.log(&quot;ringing&quot;);
+});</pre>
 
 
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="stopRinging"><span class="type-signature">&lt;async> </span>stopRinging()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Send stop ringing event</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="stopRinging"><span class="type-signature"></span>stopRinging<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="Event.html">Event</a>>}</span></h4>
     
 
     
-
-
-
-<div class="description">
-    Send stop ringing event
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2658,51 +2034,52 @@ console.log("ringing");
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-758">line 758</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1563">line 1563</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 
 
 <dl>
@@ -2711,63 +2088,62 @@ console.log("ringing");
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;<a href="Event.html">Event</a>></span>
+<span class="param-type">Promise.&lt;<a href="NXMEvent.html">NXMEvent</a>></span>
+
 
 
     </dd>
 </dl>
 
+
+        
+
     
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>Send ringing event
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Send ringing event
 function stopRinging() {
   conversation.media.stopRinging()
-     .then(function(response) {
-      }).catch(function(error) {
-          console.log(error);
-      });
+   .then((response) =&gt; {
+   }).catch((error) =&gt; {
+     console.log(error);
+   });
 }
 
-conversation.on('audio:ringing:stop', function(data)){
-console.log("ringing stopped");
-}</code></pre>
+conversation.on(&#x27;audio:ringing:stop&#x27;, (data) =&gt; {
+ console.log(&quot;ringing stopped&quot;);
+}</pre>
 
 
+    
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="updateAudioConstraints"><span class="type-signature"></span>updateAudioConstraints(constraints, type)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Replaces the stream's audio tracks currently being used as the sender's sources with a new one</p>
+    </div>
+    
+
+    
 
     
 
     
-    <h4 class="name" id="updateAudioConstraints"><span class="type-signature"></span>updateAudioConstraints<span class="signature">(constraints, type)</span><span class="type-signature"> &rarr; {Promise.&lt;MediaStream>}</span></h4>
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-
-
-<div class="description">
-    Replaces the stream's audio tracks currently being used as the sender's sources with a new one
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2777,7 +2153,7 @@ console.log("ringing stopped");
         <th>Type</th>
 
         
-        <th>Attributes</th>
+        <th>Argument</th>
         
 
         
@@ -2800,6 +2176,7 @@ console.log("ringing stopped");
 <span class="param-type">object</span>
 
 
+
             
             </td>
 
@@ -2815,7 +2192,7 @@ console.log("ringing stopped");
 
             
 
-            <td class="description last">audio constraints</td>
+            <td class="description last"><p>audio constraints</p></td>
         </tr>
 
     
@@ -2831,6 +2208,7 @@ console.log("ringing stopped");
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -2846,7 +2224,7 @@ console.log("ringing stopped");
 
             
 
-            <td class="description last">rtc object type</td>
+            <td class="description last"><p>rtc object type</p></td>
         </tr>
 
     
@@ -2862,6 +2240,7 @@ console.log("ringing stopped");
 <span class="param-type">object</span>
 
 
+
             
             </td>
 
@@ -2879,19 +2258,24 @@ console.log("ringing stopped");
 
             
 
-            <td class="description last">set audio constraints - { deviceId: { exact: microphoneId } }</td>
+            <td class="description last"><p>set audio constraints - { deviceId: { exact: microphoneId } }</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
+    
 
-
-
-
-
+    
 <dl class="details">
+    
+
+	
+
+	
+
+	
 
     
 
@@ -2901,53 +2285,56 @@ console.log("ringing stopped");
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="modules_media.js.html">modules/media.js</a>,
+				 <a href="modules_media.js.html#sunlight-1-line-438">line 438</a>
+			</li>
+		</ul>
+	</dd>
+	
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1118">line 1118</a>
-    </li></ul></dd>
-    
+	
 
-    
+	
 
-    
-
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
-    - Returns the new stream.
+    <ul>
+<li>Returns the new stream.</li>
+</ul>
 </div>
 
 
@@ -2961,310 +2348,23 @@ console.log("ringing stopped");
 <span class="param-type">Promise.&lt;MediaStream></span>
 
 
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>&lt;caption>Update the stream currently being used with a new one&lt;/caption></code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="updateSource"><span class="type-signature"></span>updateSource<span class="signature">(constraints, type)</span><span class="type-signature"> &rarr; {Promise.&lt;MediaStream>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Replaces the stream's tracks currently being used as the sender's sources with a new one
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>constraints</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">video and audio constraints</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    video
-                
-                </td>
-            
-
-            <td class="description last">rtc object type</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>constraints.audio</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">set audio constraints - { deviceId: { exact: microphoneId } }</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>constraints.video</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">set video constraints - { deviceId: { exact: cameraId } }</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="modules_media.js.html">modules/media.js</a>, <a href="modules_media.js.html#line1087">line 1087</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    - Returns the new stream.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;MediaStream></span>
-
 
     </dd>
 </dl>
 
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>&lt;caption>Update the stream currently being used with a new one&lt;/caption></code></pre>
-
-
 
         
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">&lt;caption&gt;Update the stream currently being used with a new one&lt;/caption&gt;</pre>
+
+
+    
+</dd>
+
+        </dl>
     
 
     
@@ -3277,19 +2377,136 @@ console.log("ringing stopped");
 
 
 
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Application.html">Application</a></li><li><a href="Call.html">Call</a></li><li><a href="Conversation.html">Conversation</a></li><li><a href="ConversationClient.html">ConversationClient</a></li><li><a href="Event.html">Event</a></li><li><a href="ImageEvent.html">ImageEvent</a></li><li><a href="Media.html">Media</a></li><li><a href="Member.html">Member</a></li><li><a href="Recording.html">Recording</a></li><li><a href="TextEvent.html">TextEvent</a></li></ul><h3>Events</h3><ul><li><a href="Application.html#event:call:status:changed">call:status:changed</a></li><li><a href="Application.html#event:NXM-errors">NXM-errors</a></li><li><a href="Application.html#event:member:call">member:call</a></li><li><a href="Application.html#event:member:invited">member:invited</a></li><li><a href="Application.html#event:member:joined">member:joined</a></li><li><a href="Application.html#event:rtcstats:report">rtcstats:report</a></li><li><a href="Application.html#event:sync:progress">sync:progress</a></li><li><a href="Call.html#event:member:call:state">member:call:state</a></li><li><a href="Conversation.html#event:audio:mute:off">audio:mute:off</a></li><li><a href="Conversation.html#event:audio:mute:on">audio:mute:on</a></li><li><a href="Conversation.html#event:event:delete">delete</a></li><li><a href="Conversation.html#event:image">image</a></li><li><a href="Conversation.html#event:text">text</a></li><li><a href="Conversation.html#event:image:seen">image:seen</a></li><li><a href="Conversation.html#event:member:call:status">member:call:status</a></li><li><a href="Conversation.html#event:member:invited">member:invited</a></li><li><a href="Conversation.html#event:member:joined">member:joined</a></li><li><a href="Conversation.html#event:member:left">member:left</a></li><li><a href="Conversation.html#event:member:media">member:media</a></li><li><a href="Conversation.html#event:text:seen">text:seen</a></li><li><a href="Conversation.html#event:text:typing:off">text:typing:off</a></li><li><a href="Conversation.html#event:text:typing:on">text:typing:on</a></li><li><a href="ConversationClient.html#event:connecting">connecting</a></li><li><a href="ConversationClient.html#event:disconnect">disconnect</a></li><li><a href="ConversationClient.html#event:error">error</a></li><li><a href="ConversationClient.html#event:ready">ready</a></li><li><a href="ConversationClient.html#event:reconnect">reconnect</a></li><li><a href="ConversationClient.html#event:reconnecting">reconnecting</a></li><li><a href="Member.html#event:media:connection:fail">media:connection:fail</a></li><li><a href="Member.html#event:media:stream:on">media:stream:on</a></li></ul><h3>Global</h3><ul><li><a href="global.html#NexmoApiError">NexmoApiError</a></li><li><a href="global.html#NexmoClientError">NexmoClientError</a></li></ul>
-</nav>
 
-<br class="clear">
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jul 31 2019 15:46:22 GMT+0000 (Coordinated Universal Time)
+
+
+	<span class="copyright">
+	DocStrap Copyright © 2012-2015 The contributors to the JSDoc3 and DocStrap projects.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a>
+	
+		on Tue Nov 19th 2019
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
 </body>
 </html>

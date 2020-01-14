@@ -3,7 +3,7 @@ class MarkdownPipeline < Banzai::Pipeline
     super(
       # As Markdown
       FrontmatterFilter,
-      PHPInlinerFilter,
+      PhpInlinerFilter,
       InlineEscapeFilter,
       BlockEscapeFilter,
       ScreenshotFilter,
@@ -19,11 +19,12 @@ class MarkdownPipeline < Banzai::Pipeline
       IndentFilter,
       ModalFilter,
       JsSequenceDiagramFilter,
+      MermaidFilter,
       PartialFilter.new(options),
       TechioFilter,
       UseCaseListFilter,
       CodeSnippetListFilter,
-      ConceptListFilter,
+      ConceptListFilter.new(options),
       LanguageFilter,
       ColumnsFilter,
       MarkdownFilter.new(options),

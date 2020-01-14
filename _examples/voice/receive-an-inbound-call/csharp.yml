@@ -4,11 +4,14 @@ language: dotnet
 dependencies:
     - Nexmo.Csharp.Client
     - Nancy
+client:
+    source: .repos/nexmo/nexmo-dotnet-code-snippets/NexmoDotnetCodeSnippets/Modules/RoutingModule.cs
+    from_line: 29
+    to_line: 35
 code:
-    source: .repos/nexmo/nexmo-dotnet-code-snippets/NexmoDotnetCodeSnippets/Modules/InboundCallModule.cs
-    from_line: 8
-    to_line: 33
+    source: .repos/nexmo/nexmo-dotnet-code-snippets/NexmoDotnetCodeSnippets/Modules/RoutingModule.cs
+    from_line: 149
+    to_line: 156
 run_command: 'Run using your IDE'
-file_name: InboundCallModule.cs
+file_name: RoutingModule.cs
 unindent: true
-

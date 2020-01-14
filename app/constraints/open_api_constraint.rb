@@ -3,6 +3,7 @@ OPEN_API_PRODUCTS = %w[
   media
   number-insight
   conversation
+  conversation.v2
   messages-olympus
   dispatch
   redact
@@ -15,10 +16,17 @@ OPEN_API_PRODUCTS = %w[
   verify
   vonage-business-cloud/account
   vonage-business-cloud/extension
+  vonage-business-cloud/reports
+  vonage-business-cloud/call-recording
   vonage-business-cloud/user
   vonage-business-cloud/vgis
   application.v2
   application
+  reports
+  conversion
+  subaccounts
+  developer/messages
+  pricing
 ].freeze
 
 class OpenApiConstraint
@@ -27,7 +35,7 @@ class OpenApiConstraint
   end
 
   def self.products
-    { definition: Regexp.new(OPEN_API_PRODUCTS.join('|')) }
+    { definition: Regexp.new("^(#{OPEN_API_PRODUCTS.join('|')})$") }
   end
 
   def self.errors_available
@@ -54,5 +62,14 @@ class OpenApiConstraint
     end
 
     matches.sort_by { |v| v['version'] }
+  end
+
+  def self.match?(definition, code_language = nil)
+    if code_language.nil?
+      products_with_code_language[:definition].match?(definition)
+    else
+      products_with_code_language[:definition].match?(definition) &&
+        products_with_code_language[:code_language].match?(code_language)
+    end
   end
 end
