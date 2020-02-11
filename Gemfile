@@ -30,7 +30,7 @@ gem 'clipboard-rails'
 # Icons!
 gem 'octicons_helper'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.9.0'
+gem 'jbuilder', '~> 2.10.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -54,7 +54,7 @@ gem 'rouge', '~> 2.0.7'
 gem 'banzai', '~> 0.1.2'
 
 # Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser. Among Nokogiri's many features is the ability to search documents via XPath or CSS3 selectors.
-gem 'nokogiri', '~> 1.10.4'
+gem 'nokogiri', '~> 1.10.8'
 
 # Autoload dotenv in Rails.
 gem 'dotenv-rails', groups: %i[development test]
@@ -93,7 +93,7 @@ gem 'factory_bot_rails', '5.1.1', require: false
 gem 'slack-notifier', '2.3.2'
 
 # The administration framework for Ruby on Rails.
-gem 'activeadmin', '~> 2.4'
+gem 'activeadmin', '~> 2.6'
 
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '>= 4.6.0'
