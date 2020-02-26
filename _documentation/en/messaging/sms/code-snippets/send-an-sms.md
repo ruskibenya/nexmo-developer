@@ -12,7 +12,7 @@ Key | Description
 -- | --
 `NEXMO_API_KEY` | You can find this in your account overview
 `NEXMO_API_SECRET` | You can find this in your account overview
-`NEXMO_BRAND_NAME` | The alphanumeric string that represents the name or number of the organisation sending the message.
+`NEXMO_BRAND_NAME` | The alphanumeric string that represents the name or number of the organization sending the message.
 `TO_NUMBER` | The number you are sending the SMS to in E.164  format. For example `447700900000`.
 
 

@@ -14,7 +14,7 @@ Key | Description
 -- | --
 `NEXMO_API_KEY` | You can find this in your Nexmo Dashboard.
 `NEXMO_API_SECRET` | You can find this in your Nexmo Dashboard.
-`NEXMO_BRAND_NAME` | The alphanumeric string that represents the name or number of the organisation sending the message.
+`NEXMO_BRAND_NAME` | The alphanumeric string that represents the name or number of the organization sending the message.
 `TO_NUMBER` | The number you are sending the SMS to, for example `447700900000`.
 
 ```code_snippets
