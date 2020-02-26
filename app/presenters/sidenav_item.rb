@@ -17,7 +17,7 @@ class SidenavItem
   end
 
   def svg_color
-    @options['svgColor'] && "Vlt-#{@options['svgColor']}"
+    'Vlt-gray-darker'
   end
 
   def label?

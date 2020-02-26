@@ -29,7 +29,7 @@ RSpec.describe SidenavItem do
   end
 
   describe '#svg_color' do
-    it { expect(subject.svg_color).to eq('Vlt-purple') }
+    it { expect(subject.svg_color).to eq('Vlt-gray-darker') }
   end
 
   describe '#label?' do

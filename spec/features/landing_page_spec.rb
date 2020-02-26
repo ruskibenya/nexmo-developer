@@ -18,7 +18,7 @@ RSpec.feature 'Landing page' do
       expect(page).to have_css('p.p-large', text: 'Everything you need to build connected applications with Nexmo')
     end
 
-    within('.container .columns.small-12') do
+    within('.Nxd-products-list') do
       within('.Vlt-col.Vlt-col--1of3.Vlt-col--M-1of2:nth-of-type(1)') do
         expect(page).to have_css('small', text: 'Send and receive')
         expect(page).to have_link('SMS', href: '/messaging/sms/overview')
@@ -208,19 +208,19 @@ RSpec.feature 'Landing page' do
           end
         end
       end
+    end
 
-      within('.Vlt-grid:nth-of-type(6)') do
-        within('.Vlt-col--M-1of2:nth-of-type(1)') do
-          expect(page).to have_link('SDKs & Tools', href: '/tools')
-          expect(page).to have_content('The Nexmo libraries allow you to get up and running with')
-          expect(page).to have_content('Nexmo APIs quickly in your language of choice.')
-        end
+    within('.columns > .Vlt-grid') do
+      within('.Vlt-col--M-1of2:nth-of-type(1)') do
+        expect(page).to have_link('SDKs & Tools', href: '/tools')
+        expect(page).to have_content('The Nexmo libraries allow you to get up and running with')
+        expect(page).to have_content('Nexmo APIs quickly in your language of choice.')
+      end
 
-        within('.Vlt-col--M-1of2:nth-of-type(2)') do
-          expect(page).to have_link('Community', href: '/community')
-          expect(page).to have_content('Find out about our talks, community hacks,')
-          expect(page).to have_content('and what events we\'ll be at.')
-        end
+      within('.Vlt-col--M-1of2:nth-of-type(2)') do
+        expect(page).to have_link('Community', href: '/community')
+        expect(page).to have_content('Find out about our talks, community hacks,')
+        expect(page).to have_content('and what events we\'ll be at.')
       end
     end
   end
