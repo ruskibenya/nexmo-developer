@@ -5,7 +5,7 @@
         <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
           <svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-search"/></svg>
         </div>
-        <div class="Vlt-input">
+        <div class="Vlt-input Vlt-input--round">
           <input
             v-model="query"
             name="query"
