@@ -1,19 +1,19 @@
 <template>
-  <div class="Vlt-box Vlt-box--left feedback">
+  <div class="Vlt-box Vlt-box--left Vlt-bg-grey-light feedback">
     <div class="Vlt-grid">
       <div class="Vlt-col Vlt-col--3of4">
-        <h5>Was this documentation helpful?</h5>
+        <h4>Was this documentation helpful?</h4>
 
         <div class="sentiments">
           <div v-if="uploadingSentiment">
             <div class="Vlt-spinner Vlt-spinner--small"></div>
           </div>
           <div>
-            <span v-on:click="setSentiment('positive')" v-bind:class="[{ 'Vlt-btn_active': sentiment == 'positive' }, 'Vlt-btn Vlt-btn--large Vlt-btn--tertiary Vlt-btn--icon']">
-              <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-happy"/></svg>
+            <span v-on:click="setSentiment('positive')" v-bind:class="[{ 'Vlt-btn_active': sentiment == 'positive' }, 'Vlt-btn Vlt-btn--large Vlt-btn--tertiary Vlt-btn--icon Vlt-bg-green']">
+              <svg class="Vlt-white"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-happy"/></svg>
             </span>
-            <span v-on:click="setSentiment('negative')" v-bind:class="[{ 'Vlt-btn_active': sentiment == 'negative' }, 'Vlt-btn Vlt-btn--large Vlt-btn--tertiary Vlt-btn--icon']">
-              <svg class="Vlt-red"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-unhappy"/></svg>
+            <span v-on:click="setSentiment('negative')" v-bind:class="[{ 'Vlt-btn_active': sentiment == 'negative' }, 'Vlt-btn Vlt-btn--large Vlt-btn--tertiary Vlt-btn--icon Vlt-bg-red']">
+              <svg class="Vlt-white"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-unhappy"/></svg>
             </span>
           </div>
         </div>
@@ -24,7 +24,7 @@
           <svg class="Vlt-icon Vlt-black">
             <use xlink:href="/symbol/volta-icons.svg#Vlt-icon-github" />
           </svg>
-          <a v-bind:href="githubUrl" target="_blank"> Improve this page</a>
+          <a v-bind:href="githubUrl" target="_blank" class="Vlt-text-link Vlt-black"> Improve this page</a>
         </span>
       </div>
     </div>
