@@ -13,23 +13,6 @@ navigation_weight: 0
 - Fix duplicated webrtc offer sent during IP calling
 - Fix Safari `WebRTC` dependency
 
-## Version 6.0.8 - February 27, 2020
-
-### Fixes
-
-- Fix duplicated webrtc offer sent during IP calling
-
-## 6.0.7
-
-### Fixes
-
-- Fix ANSWERED call status in IP - IP calling
-- Fix docs issues
-
-### Changes
-
-- Improve TypeScript definitions
-
 ## Version 6.0.7 - January 16, 2020
 
 ### Fixes
