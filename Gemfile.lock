@@ -1,4 +1,37 @@
 GIT
+  remote: https://github.com/Nexmo/nexmo-markdown-renderer
+  revision: cc1f3d965a4579da54141bc1a13caa1a54e4e859
+  branch: update-volta
+  specs:
+    nexmo_markdown_renderer (0.0.3)
+      activemodel (~> 6.0)
+      banzai (~> 0.1.2)
+      i18n (~> 1.7)
+      nokogiri (~> 1.10)
+      octicons_helper (~> 8.2)
+      redcarpet (~> 3.4)
+      rouge (~> 2.0.7)
+
+GIT
+  remote: https://github.com/Nexmo/nexmo-oas-renderer
+  revision: 002d59793ff12a20b82ea8e050c6bf5988c46e87
+  branch: update-volta
+  specs:
+    nexmo-oas-renderer (0.8.0)
+      activemodel (~> 6.0)
+      activesupport (~> 6.0)
+      banzai (~> 0.1.2)
+      dotenv (~> 2.7)
+      neatjson (~> 0.8)
+      oas_parser (~> 0.23)
+      octicons_helper (~> 8.2)
+      redcarpet (= 3.4.0)
+      rouge (= 2.0.7)
+      sass (~> 3.1)
+      shotgun (~> 0.9)
+      sinatra (~> 2.0)
+
+GIT
   remote: https://github.com/oscardelben/rawler.git
   revision: f2909b135fce7d35167f98026ac481926c94423e
   specs:
@@ -288,28 +321,6 @@ GEM
     nenv (0.3.0)
     netrc (0.11.0)
     newrelic_rpm (6.9.0.363)
-    nexmo-oas-renderer (0.8.0)
-      activemodel (~> 6.0)
-      activesupport (~> 6.0)
-      banzai (~> 0.1.2)
-      dotenv (~> 2.7)
-      neatjson (~> 0.8)
-      nexmo_markdown_renderer (>= 0.0.3)
-      oas_parser (~> 0.23)
-      octicons_helper (~> 8.2)
-      redcarpet (= 3.4.0)
-      rouge (= 2.0.7)
-      sass (~> 3.1)
-      shotgun (~> 0.9)
-      sinatra (~> 2.0)
-    nexmo_markdown_renderer (0.0.3)
-      activemodel (~> 6.0)
-      banzai (~> 0.1.2)
-      i18n (~> 1.7)
-      nokogiri (~> 1.10)
-      octicons_helper (~> 8.2)
-      redcarpet (~> 3.4)
-      rouge (~> 2.0.7)
     nio4r (2.5.2)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
@@ -575,8 +586,8 @@ DEPENDENCIES
   lograge
   neatjson
   newrelic_rpm
-  nexmo-oas-renderer (~> 0.8.0)
-  nexmo_markdown_renderer (~> 0.0.3)
+  nexmo-oas-renderer!
+  nexmo_markdown_renderer!
   nokogiri (~> 1.10.8)
   octokit
   pg (~> 1.2)

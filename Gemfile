@@ -129,9 +129,9 @@ gem 'lograge'
 gem 'countries'
 gem 'country_select', '~> 4.0'
 
-gem 'nexmo_markdown_renderer', '~> 0.0.3'
+gem 'nexmo_markdown_renderer', git: 'https://github.com/Nexmo/nexmo-markdown-renderer', branch: 'update-volta'
 
-gem 'nexmo-oas-renderer', '~> 0.8.0', require: false
+gem 'nexmo-oas-renderer', git: 'https://github.com/Nexmo/nexmo-oas-renderer', branch: 'update-volta', require: false
 
 gem 'smartling'
 
