@@ -253,8 +253,15 @@ page:
                         <p class="Vlt-col Vlt-right mobile-justify">17:00 London / 12:00 New York / 11:00 SF</p>
                       </div>
                       <p class="Vlt-col padding-left-0 mobile-justify">
-                        We'll be discussing <a href="https://twitter.com/ParissAthena" target="_blank"><b>Pariss'</b></a> experience with having a platform on Twitter and authentically growing that presence
+                        Any and all of the following topics will be discussed:
                       </p>
+                      <ul class="Vlt-list Vlt-list--simple">
+                        <li>Getting into tech even if it isn't your passion (fusing your passion w/ tech)</li>
+                        <li>DE&I in tech (being underrepresented in tech)</li>
+                        <li>Pariss' experience with having a platform on Twitter and authentically growing that presence</li>
+                        <li>The good and bad of having a social media presence</li>
+                        <li>Juggling a full-time job and life as an entrepreneur</li>
+                      </ul>
                     </div>
                     <div class="padding-top-32">
                       <div class="Vlt-col padding-left-0">
@@ -288,9 +295,7 @@ page:
                             Developer Success at G2i Inc.
                           </h5>
                           <p class="text-justify">
-                            Pariss began her career as a front-end developer after graduating from Resilient Coders. She works for G2i as a hiring and platform member- vetting engineers as an engineer, and taking lead on social media marketing efforts.
-                            <br>
-                            Creator of #BlackTechTwitter & Founder of Black Tech Pipeline
+                            Pariss Athena is the creator of the movement and community, #BlackTechTwitter, and Founder of Black Tech Pipeline. Black Tech Pipeline is a service-based platform that brings exposure, resources, and opportunities to Black technologists, and their allies. With a strong focus on retention, Pariss connects employers to candidates within her community and works with those companies on their diversity, equity, and inclusion initiatives.
                           </p>
                           </br>
                           <a class="Vlt-purple" href="https://twitter.com/btpipeline">
