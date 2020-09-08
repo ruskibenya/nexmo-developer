@@ -109,9 +109,10 @@ page:
                       <b>24</b>
                     </div>
                   </div>
-                  <div class="Vlt-table__cell Vlt-tabs__link Vlt-tabs__link_disabled" id="25">
+                  <div class="Vlt-table__cell Vlt-tabs__link" id="25">
                     <div class="calendar-item">
                       <b>25</b>
+                      <p class="show"><span class="Vlt-badge Vlt-badge--green Vlt-badge--transparent">new</span> Build a Thing with Kevin Lewis</p>
                     </div>
                   </div>
                 </div>
@@ -597,59 +598,74 @@ page:
                 <div class="Vlt-tabs__panel" id="tab-25">
                   <div class="Vlt-grid">
                     <div class="Vlt-col Vlt-col--1of3 padding-left-0">
-                      <img src="https://res.cloudinary.com/dsg3ucw55/image/upload/v1596477949/Late_Night_Build_2_jlys7x.png" alt="The Late Night Build">
+                      <img src="https://res.cloudinary.com/dsg3ucw55/image/upload/v1599559866/Twitter_Post_-_1_24_trssdl.png" alt="Build a Thing with Kevin Lewis">
                     </div>
                     <div class="Vlt-col Vlt-col--2of3">
                       <div class="Vlt-grid">
-                        <h4 class="Vlt-col mobile-center">The Late Night Build</h4>
-                        <p class="Vlt-col Vlt-right mobile-justify">21:00 London / 16:00 New York / 15:00 SF</p>
+                        <h4 class="Vlt-col mobile-center"><span class="Vlt-badge Vlt-badge--green Vlt-badge--transparent">new</span> Build a Thing with Kevin Lewis</h4>
+                        <p class="Vlt-col Vlt-right mobile-justify">18:00 London / 13:00 New York / 10:00 SF</p>
                       </div>
-                      <ul class="Vlt-list Vlt-list--simple">
-                        <li><b>Compile Time:</b> Featured guest<a href="https://twitter.com/carolstran?lang=en" target="_blank"> Carolyn Stransky </a> will speak about Self Care for developers.</li>
-                        <li><b>Musical Guest:</b> <a href="https://twitter.com/johnnyandheidi?lang=en" target="_blank"> Johnny & Heidi </a></li>
-                        <li><b>Deploy on Friday:</b> A mini-hack, challenge based contest for cool prizes!
-                          <ul class="Vlt-list Vlt-list--simple">
-                            <li>Prize: <a href="https://www.amazon.com/Atari-Flashback-Console-Wireless-Controllers-gamecube/dp/B0779JXNV9" target="_blank">Atari Flashback 8 Gold Console</a>
-                            </li>
-                            <li>Participants:
-                              <ul class="Vlt-list Vlt-list--simple">
-                                <li>Edward Baker</li>
-                                <li><a href="https://twitter.com/rgeek" target="_blank">Wayne Taylor</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+                      <p class="Vlt-col padding-left-0 mobile-justify">
+                        Join Kevin Lewis, Developer Advocate at Vonage, as he builds a new project from scratch over several weeks.
+                        <br><br>
+                        Kevin is currently building a serverless video conferencing application using Netlify Functions, MongoDB, Vue.js and the Vonage Video API. In this episode, Kevin will set up the base project ready to add new features to!
+                        <br><br>
+                        <b>Links:</b>
+                        <a href="https://github.com/nexmo-community/build-a-thing-video-conferencing" target="_blank">
+                          Companion Repo
+                        </a>
+                        <b> - </b>
+                        <a href="https://www.netlify.com/products/functions" target="_blank">
+                          Netlify Functions
+                        </a>
+                        <b> - </b>
+                        <a href="https://tokbox.com/developer/sdks/node/" target="_blank">
+                          Vonage Video API Docs
+                        </a>
+                        <br>
+                        <a href="https://dev.to/_phzn/accessing-mongodb-atlas-from-netlify-functions-1h70" target="_blank">
+                          Accessing MongoDB Atlas from Netlify Functions
+                        </a>
+                      </p>
+                      <h5 class="Vlt-col Vlt-title--icon padding-left-0 mobile-justify">
+                        <svg class="Vlt-icon Vlt-icon--large"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-tool-full"></svg>
+                        JavaScript - Node.js - HTML - CSS - Vonage Video API - Serverless - Netlify - MongoDB - Vue.js
+                      </h5>
                     </div>
                     <div class="Vlt-grid padding-top-32">
                       <div class="Vlt-col Vlt-col--1of2">
                         <h4>About The Show</h4>
                         <p class="text-justify">
-                          What would you get if your favorite tech conference and late night television program got together? The Late Night Build. Every other week, join Michael Jolley as he is joined by a special guest to talk all things tech. Then relax to the sounds of each episode's musical guest. Finally, watch an awesome demo in various languages & stacks. All this while contestants are competing in a hack-a-thon for prizes.
+                          A 5 week series where Kevin Lewis will build a video conferencing app.
                         </p>
-                        <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcQ01fcB0ETuX-D-X7MRYN3DGxrYQlQEqUv4-BjNkvj5oHjQ/viewform">Apply to Participate in Deploy on Friday!</a>
                       </div>
                       <div class="Vlt-col Vlt-col--1of2">
-                        <h4 class="inline-block">About Michael Jolley</h4>
-                        <a href="https://twitter.com/baldbeardbuild" target="_blank">
+                        <h4 class="inline-block">About Kevin Lewis</h4>
+                        <a href="https://twitter.com/_phzn" target="_blank">
                           <i class="icon icon-twitter"></i>
                         </a>
-                        <a href="https://github.com/MichaelJolley" target="_blank">
+                        <a href="https://github.com/phazonoverload" target="_blank">
                           <i class="icon icon-github"></i>
                         </a>
                         <h5>
                           Developer Advocate
                         </h5>
                         <p class="text-justify">
-                          Michael is the bald, bearded builder.
-                          <br>
-                          Using his 20 years experience in software development and DevOps, this follicly challenged developer spends his days focused on helping others succeed.
+                          💼 Kevin is a Developer Advocate at Vonage, where he supports developers discover, understand and build using our APIs. His focus is supporting developers in London (and, more broadly, EMEA).
+                          <br><br>
+                          He writes <a href="https://www.nexmo.com/blog/author/kevinlewis" target="_blank">technical blog posts</a>.<br>
+                          He works on our champions program - <a href="https://developer.nexmo.com/voyagers" target="_blank">Vonage Voyagers</a>.<br>
+                          He supports community event organizers take <a href="https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online" target="_blank">their events online</a>.<br><br>
+                          💖 He is an experienced event organizer
+                          <br><br>
+                          He is a lead organizer and coordinator for <a href="https://yougotthis.io/" target="_blank">You Got This</a> - a network of community-run conferences on non-technical 'core' skills.<br>
+                          He is an organizer of <a href="https://lnug.org/" target="_blank">London Node User Group</a>, <a href="https://www.londoncss.dev/" target="_blank">London CSS</a> and <a href="https://barcamplondon.org/" target="_blank">BarCamp London</a>.<br><br>
+                          👨‍💻 He primarily write JavaScript, with a further interest in Serverless, Vue.js (with Nuxt.js) and Airtable.<br><br>
+
+                          🎙️ He is currently working on a new podcast - <a href="https://handler.events/" target="_blank">Event Handler</a> - a podcast for people interested in running developer events. Launching soon.
+                          <br><br>
+                          🎲 He loves boardgames! <a href="https://boardgamegeek.com/collection/user/phazonoverload" target="_blank">His collection is here.</a>
                         </p>
-                        </br>
-                        <a class="Vlt-purple" href="https://baldbeardedbuilder.com/">
-                           BaldBeardedBuilder.com
-                        </a>
                       </div>
                     </div>
                   </div>
