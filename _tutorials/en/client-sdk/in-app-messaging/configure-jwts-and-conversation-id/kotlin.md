@@ -33,7 +33,6 @@ object Config {
         "BOB_TOKEN" // TODO: "set Bob's JWT token"
     )
 }
-
 ```
 
 Notice that these constants and values are hardcoded to store the properties of users. This makes it easier to use these values later in this tutorial.

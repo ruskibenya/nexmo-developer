@@ -1,5 +1,5 @@
 title: Creating an Android chat app
-description: Create a Android application that enables users to message each other
+description: Create a Android application that enables users to message each other using the Android Client SDK and Kotlin.
 products:
   - client-sdk
 
@@ -21,7 +21,7 @@ introduction:
     - Android (6.0 and above - API level 23 and above)
     - Client SDK for Android 2.6.4
 
-    Last update: August 2020
+    Last update: September 2020
 
 prerequisites:
   - create-nexmo-account
@@ -39,7 +39,7 @@ tasks:
   - client-sdk/in-app-messaging/starter-project
   - client-sdk/android-shared/initialize-client
   - client-sdk/in-app-messaging/configure-jwts-and-conversation-id
-  - client-sdk/in-app-messaging/authenticate-users
+  - client-sdk/android-shared/authenticate-alice-and-bob
   - client-sdk/in-app-messaging/fetch-conversation
   - client-sdk/in-app-messaging/fetch-events
   - client-sdk/in-app-messaging/send-message
